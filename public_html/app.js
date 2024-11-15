@@ -27,7 +27,7 @@ function subscribe() {
         navigator.serviceWorker.ready.then(registration => {
             registration.showNotification('¡Hola desde tu PWA!', {
                 body: 'Esta es una notificación desde tu dispositivo Android.',
-                icon: '/images/icon.png',
+                icon: '/icon.png',
                 vibrate: [200, 100, 200], // Vibración en dispositivos compatibles
                 tag: 'notificacion-ejemplo', // Identificador único
             });
